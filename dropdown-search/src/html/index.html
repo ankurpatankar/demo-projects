@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="../js/searchEvents.js" ></script>
+        <link type="text/css" href="../css/styles.css" rel="stylesheet"  />
+    </head>
+    <body>
+        <div class="full-width">
+            <div class="content">
+                <input
+                        type="search"
+                        placeholder="Search Financial Products"
+                        list="financial-products"
+                        onkeyup="autoComplete(event)"
+                        onfocus="showFinancialProductTypesDropdown(event)"
+                        tabindex="1"
+                        class="push-top-base" />
+                <datalist
+                        id="financial-products"
+                        class="push-top-base" >
+                </datalist>
+                <div class="full-width search-metadata push-top-base"></div>
+                <ul class="search-results push-top-base" id="search-results"></ul>
+            </div>
+        </div>
+
+        <script src="../js/index.js" ></script>
+    </body>
+</html>
